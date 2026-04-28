@@ -248,7 +248,7 @@ export function QuestionForm({ onGenerate, isGenerating, setIsGenerating }) {
     }
 
     try {
-      const res = await fetch("https://dsa-ml-back.onrender.com/get_questions_genai", {
+      const res = await fetch("http://127.0.0.1:5000/get_questions_genai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
