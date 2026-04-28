@@ -1,0 +1,20 @@
+# flask
+# gunicorn
+# langchain
+# langchain_groq
+# langchain_core
+# numpy
+# pandas
+# python-dotenv
+
+
+
+flask
+flask-cors
+gunicorn
+langchain==0.1.16
+langchain_groq==0.1.5
+python-dotenv
+numpy
+pandas
+openpyxl

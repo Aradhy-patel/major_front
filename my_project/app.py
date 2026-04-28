@@ -4,9 +4,17 @@ from src.replies.scoreReplyFinal import scoreReplyFinalForAll
 from src.utils.customException import handle_exceptions
 from src.utils.customLogger import logger
 from pathlib import Path
+from flask_cors import CORS
 import os
 
 app=Flask(__name__)
+
+# Configure CORS to allow requests from http://localhost:8080
+CORS(
+    app,
+    supports_credentials=True,
+    resources={r"/*": {"origins": ["https://major-front.onrender.com"]}}
+)
 
 
 # Global error handler
@@ -99,3 +107,6 @@ def submit():
 
 if __name__=="__main__":
     app.run(debug=False)
+
+
+
